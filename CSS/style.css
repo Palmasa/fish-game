@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+:root {
+  --main-bg-color: rgb(29, 125, 170);
+  --light-bg-color: rgba(123, 172, 196, 0.2);
+  --txt-color: rgb(36, 36, 36);
+}
+/* 
+font-family: 'Bungee Outline', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Russo One', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+  body {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+canvas {
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: rgb(29, 125, 170); */
+  }
+
+  .btn {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 30px;
+    background-color: rgba(214, 214, 214, 0.055);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #61616199;
+    outline:none;
+    transition: background 1s;
+  }
+  .btn:hover {
+    transition-property: background;
+    background: linear-gradient(rgba(214, 214, 214, 0.055), #94d2eb81);
+    box-shadow: 0px 0px 25px #46464699;
+  }
+
+  .title {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 25px;
+    padding: 0 0 15px 0;
+  }
+
+  .medals {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6em;
+    font-family: 'RocknRoll One', sans-serif;
+    padding: 10px;
+    line-height: 0.3;
+    margin: 10px auto 30px auto;
+  }
+
+  .single-medal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 80px;
+    color: var(--txt-color);
+  }
+
+  .desac-medals {
+    width: 35px;
+  }
